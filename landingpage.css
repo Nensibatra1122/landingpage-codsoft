@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Poppins:ital,wght@0,400;1,300&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,300;1,100&family=Ubuntu:wght@300&family=Work+Sans:wght@300&family=Zilla+Slab:ital,wght@0,400;0,500;1,400&display=swap');
+*{
+   
+    color: white;
+    background-color: darkgreen;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+ 
+
+.container {
+    max-width: 150vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    margin-bottom: 0px;
+    height: 150px !important;
+    display: flex;
+    align-items: center;
+}
+
+.header nav {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+/* Add your other styles here */
+
+.left-content {
+    flex-grow: 1; /* Make the left content expand to fill the available space */
+}
+
+.right-content {
+    max-width: 45%; /* Set a maximum width for the right content */
+    margin-left: auto; /* Push the right content to the right */
+}
+
+/* Add your other styles here */
+
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+.navbar .btn {
+    vertical-align: middle;
+}
+/*.navbar hr {
+    margin: 5px 0;*/
+}
+
+.topleft{
+    width: 50%;
+}
+
+.topright{ 
+    width: 50%;
+}
+
+.section1{
+   max-height: 100vh;
+}
+.section1 h1{
+    font-size: 2rem;
+}
+.section2{
+    color: white;
+    padding-right: 63px;
+    padding-right:63px;
+}
+.section2 h1{
+    font-size: 3rem;
+}
+
+.boxs {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.box {
+    border: 2px solid white;
+    padding: 20px;
+    width: calc(30% - 40px); /* Adjust the width as needed */
+    box-sizing: border-box;
+}
+.box h2{
+    fontsixe:2rem;
+    font-weight: bolder;
+
+}
+
+.list {
+    color: white;
+    list-style-type: none; /* Remove list item bullets */
+    padding: 0;
+}
+
+.list li {
+    margin-bottom: 10px;
+}
+
+.btn {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.top{
+    margin-top: 134px;
+}
+.plantable{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.section3 table{
+    width: 100%;
+    margin-bottom: 140px;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.section3 table th{ 
+    width: 23vw; 
+    border-bottom: 2px solid white;
+    padding: 15px 0;
+} 
+
+.section3 table td{   
+    border-bottom: 2px solid white; 
+} 
+ 
+
+.section3 h1{
+    font-size: 2.3rem;
+}
+
+.section3{
+    padding: 73px;
+}
+
+footer{
+    padding: 23px;
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
+
+.deal{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 12px 0;
+}
+.home-sci {
+    position: fixed; /* Use fixed positioning */
+    bottom: 0; /* Position at the bottom */
+    left: 35px; /* Position at the left */
+  }
+  
+  .home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+
+  
+  
+  
+  
+  .home-sci a::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  
+  .home-sci a:hover::before {
+    width: 100%;
+  }
+.home-imghover {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+    animation:manipActiveHover .1s forwards;
+    animation-delay: 4s;
+    pointer-events: none;
+}
+.home-imghover:hover {
+    background: darkgreen;
+    opacity: .8;
+}
+.home-imghover ::after {
+    content: ' ';
+    position: absolute;
+    top:0;
+    right: 0px;
+    width: 120%;
+    height: 100%;
+    background:darkgreen;
+    animation: showRight 1s ease forwards;
+    animation-delay: 3s;
+    z-index: 100;
+}
+/* Small screens (mobile) */
+@media screen and (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+    }
+    
+    .navbar li {
+        margin: 5px 0;
+    }
+    
+    .topright img {
+        max-width: 100%;
+    }
+    
+    /* Add more CSS rules for other elements as needed */
+}
+/* Services Section */
+.services {
+   
+    padding: 40px 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.services h1 {
+    font-size: 2.3rem;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.service-card {
+    background-color: darkgreen;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px ;
+    margin: 20px;
+}
+
+.service-card img {
+    max-width: 100%;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Explore Our Facilities Section */
+.explore-facilities {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-color: darkgreen;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.explore-facilities h1 {
+    margin-top: 35px;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.facility-card {
+   
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px ;
+    margin: 20px;
+}
+
+.facility-card img {
+    max-width: 100%;
+}
+
+.facility-card h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+
+}
+.line-above {
+ position: relative;
+  top: -50px; /* Adjust this value to control the positioning */
+  z-index: 1;
+}
+.small-image {
+  width: 250px; /* Set the desired width */
+  height: auto; 
+  }
